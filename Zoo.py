@@ -1,6 +1,5 @@
 from zoo_func import * 
 
-
 costo_total = 0
 Total_entradas = 0
 
@@ -9,12 +8,9 @@ def entradas (tipos_entrada):
     global Total_entradas
 
     entrada = " "
-
     while entrada != "":
     
         entrada = solicita_edad ()
-
-
         if entrada == "":
             break
         else:
@@ -28,7 +24,6 @@ def entradas (tipos_entrada):
                     continue
 
                 categoria = procesa_edad(edad,tipos_entrada)
-
                 tipos_entrada [categoria]["CONTADOR"] += 1
                 costo_total += tipos_entrada[categoria]["PRECIO"]
                 Total_entradas += 1
